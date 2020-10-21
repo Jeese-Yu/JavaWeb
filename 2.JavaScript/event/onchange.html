@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onchangefun() {
+            alert("女神改变了")
+        }
+
+        //动态
+        window.onload = function () {
+            var a = document.getElementById("sel01")
+            a.onchange = function () {
+                alert("haha")
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+请选择你心中的女神:
+<select onchange="onchangefun();">
+    <option>--女神--</option>
+    <option>芳芳</option>
+    <option>佳佳</option>
+    <option>娘娘</option>
+</select>
+
+请选择你心中的男神:
+<select id ="sel01" >
+    <option>--男神--</option>
+    <option>芳芳</option>
+    <option>佳佳</option>
+    <option>娘娘</option>
+</select>
+</body>
+</html>
